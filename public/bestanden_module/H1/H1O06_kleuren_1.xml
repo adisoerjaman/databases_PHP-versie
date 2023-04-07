@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<kleuren>
+    <thead>
+        <th>Kleur</th>
+        <th>R</th>
+        <th>G</th>
+        <th>B</th>
+    </thead>
+    <kleur>
+        <naam>Peru</naam>
+        <rood>205</rood>
+        <geel>133</geel>
+        <blauw>63</blauw>
+    </kleur>
+    <kleur>
+        <naam>Sienna</naam>
+        <rood>160</rood>
+        <geel>82</geel>
+        <blauw>45</blauw>
+    </kleur>
+    <kleur>
+        <naam>Tan</naam>
+        <rood>210</rood>
+        <geel>180</geel>
+        <blauw>140</blauw>
+    </kleur>
+</kleuren>
