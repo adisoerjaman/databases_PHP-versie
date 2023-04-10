@@ -17,6 +17,14 @@ CREATE TABLE `leerlingen` (
     `klas` varchar(16) NOT NULL, 
 );
 
+CREATE TABLE `inschrijvingen` (
+    `id_leerling` varchar(3) NOT NULL,
+    `vak` varchar(16) NOT NULL,
+    PRIMARY KEY (`id_leerling`,`vak`),
+    CONSTRAINT FOREIGN KEY (`id_leerling`) REFERENCES `leerlingen` (`id_leerling`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+    CONSTRAINT FOREIGN KEY (`vak`) REFERENCES `vakken` (`vak`) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
 INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
 (`001`, `Adi`, `H4a`),
 (`002`, `Badi`, `H4a`);
