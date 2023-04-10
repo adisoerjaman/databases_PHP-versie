@@ -8,13 +8,13 @@ CREATE TABLE `vakken` (
     `vak` varchar(16) PRIMARY KEY,
     `docentcode` varchar(3) NOT NULL,
     `docentnaam` text NOT NULL,
-    `lokaal` text,
+    `lokaal` text
 );
 
 CREATE TABLE `leerlingen` (
     `id_leerling` varchar(3) PRIMARY KEY,
     `naam` text NOT NULL,
-    `klas` varchar(16) NOT NULL, 
+    `klas` varchar(16) NOT NULL
 );
 
 CREATE TABLE `inschrijvingen` (
