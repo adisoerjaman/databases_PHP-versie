@@ -8,7 +8,7 @@ CREATE TABLE `vakken` (
     `vak` varchar(16) PRIMARY KEY,
     `docentcode` varchar(3) NOT NULL,
     `docentnaam` text NOT NULL,
-    `lokaal` text
+    `lokaal` varchar(16)
 );
 
 CREATE TABLE `leerlingen` (
@@ -25,6 +25,15 @@ CREATE TABLE `inschrijvingen` (
     CONSTRAINT FOREIGN KEY (`vak`) REFERENCES `vakken` (`vak`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 
+INSERT INTO `vakken` (`vak`, `docentcode`, `docentnaam`, `lokaal`) VALUES
+(`Wiskunde`, `D01`, `Henk`, `B0.02`),
+(`Informatica`, `D02`, `Gea`, `B1.02`);
+
 INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
 (`001`, `Adi`, `H4a`),
 (`002`, `Badi`, `H4a`);
+
+INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
+(`001`, `Wiskunde`),
+(`002`, `Informatica`);
+
