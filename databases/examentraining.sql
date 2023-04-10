@@ -5,7 +5,7 @@ CREATE DATABASE `examentraining`;
 USE `examentraining`;
 
 CREATE TABLE `vakken` (
-    `vak` varchar(16) PRIMARY KEY,
+    `vak` AUTO_INCREMENT varchar(16) PRIMARY KEY,
     `docentcode` varchar(3) NOT NULL,
     `docentnaam` text NOT NULL,
     `lokaal` varchar(16)
