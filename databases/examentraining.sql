@@ -37,3 +37,4 @@ INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
 (1, 'Wiskunde'),
 (2, 'Informatica');
 
+-- Dit is een comment
