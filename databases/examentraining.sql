@@ -26,14 +26,14 @@ CREATE TABLE `inschrijvingen` (
 );
 
 INSERT INTO `vakken` (`vak`, `docentcode`, `docentnaam`, `lokaal`) VALUES
-(`Wiskunde`, `D01`, `Henk`, `B0.02`),
-(`Informatica`, `D02`, `Gea`, `B1.02`);
+('Wiskunde', 'D01', 'Henk', 'B0.02'),
+('Informatica', 'D02', 'Gea', 'B1.02');
 
--- INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
--- (`001`, `Adi`, `H4a`),
--- (`002`, `Badi`, `H4a`);
+INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
+('1', 'Adi', 'H4a'),
+('2', 'Badi', 'H4a');
 
--- INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
--- (`001`, `Wiskunde`),
--- (`002`, `Informatica`);
+INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
+('1', 'Wiskunde'),
+('2', 'Informatica');
 
