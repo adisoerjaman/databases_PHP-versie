@@ -12,7 +12,7 @@ CREATE TABLE `vakken` (
 );
 
 CREATE TABLE `leerlingen` (
-    `id_leerling` varchar(3) PRIMARY KEY,
+    `id_leerling` int AUTO_INCREMENT PRIMARY KEY,
     `naam` text NOT NULL,
     `klas` varchar(16) NOT NULL
 );
@@ -29,11 +29,11 @@ INSERT INTO `vakken` (`vak`, `docentcode`, `docentnaam`, `lokaal`) VALUES
 (`Wiskunde`, `D01`, `Henk`, `B0.02`),
 (`Informatica`, `D02`, `Gea`, `B1.02`);
 
-INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
-(`001`, `Adi`, `H4a`),
-(`002`, `Badi`, `H4a`);
+-- INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
+-- (`001`, `Adi`, `H4a`),
+-- (`002`, `Badi`, `H4a`);
 
-INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
-(`001`, `Wiskunde`),
-(`002`, `Informatica`);
+-- INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
+-- (`001`, `Wiskunde`),
+-- (`002`, `Informatica`);
 
