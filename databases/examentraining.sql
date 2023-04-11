@@ -18,7 +18,7 @@ CREATE TABLE `leerlingen` (
 );
 
 CREATE TABLE `inschrijvingen` (
-    `id_leerling` varchar(3) NOT NULL,
+    `id_leerling` int NOT NULL,
     `vak` varchar(16) NOT NULL,
     PRIMARY KEY (`id_leerling`,`vak`),
     CONSTRAINT FOREIGN KEY (`id_leerling`) REFERENCES `leerlingen` (`id_leerling`) ON DELETE RESTRICT ON UPDATE RESTRICT,
@@ -30,10 +30,10 @@ INSERT INTO `vakken` (`vak`, `docentcode`, `docentnaam`, `lokaal`) VALUES
 ('Informatica', 'D02', 'Gea', 'B1.02');
 
 INSERT INTO `leerlingen` (`id_leerling`, `naam`, `klas`) VALUES
-('1', 'Adi', 'H4a'),
-('2', 'Badi', 'H4a');
+(1, 'Adi', 'H4a'),
+(2, 'Badi', 'H4a');
 
 INSERT INTO `inschrijvingen` (`id_leerling`, `vak`) VALUES
-('1', 'Wiskunde'),
-('2', 'Informatica');
+(1, 'Wiskunde'),
+(2, 'Informatica');
 
