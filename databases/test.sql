@@ -10,4 +10,5 @@ CREATE TABLE `student` (
 
 INSERT INTO `student` (`id`, `naam`, `klas`) VALUES
 (1, 'Alan', 'Havo4a'),
-(2, 'Bob', 'Havo4b');
+(2, 'Bob', 'Havo4b'),
+(3, 'Coen', 'Havo4b');
